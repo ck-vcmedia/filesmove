@@ -1,0 +1,89 @@
+@import './vendor/vendor';
+
+body {
+  padding-bottom: 30px;  
+}
+.masthead {
+  margin-bottom: 30px;
+}
+
+.required__field {
+  color: #FF0220;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.lead {
+  color: black;
+}
+
+select {
+ text-indent: 10px;
+}
+
+input {
+  padding-left: 0 !important;
+  text-indent: 15px !important;
+}
+
+label {
+  color: #000 !important;
+}
+
+.btn--header--number {
+  background-color: transparent !important;
+  border: none;
+  color: #fff !important;
+  padding-right: 0 !important;
+}
+
+.card-text {
+  color: #000 !important;
+}
+
+.form-error {
+  color: red;
+  font-weight: bold;
+}
+
+.form-control-error {
+  border: 1px solid red;
+}
+
+.hide-form {
+  animation: hideForm 300ms forwards;
+  display: none;
+}
+
+.hide-success {
+  display: none;
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  > .form-group {
+    width: 500px;
+  }
+  > .url-dir {
+    width: 500px;
+  }
+}
+
+@keyframes hideForm {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
